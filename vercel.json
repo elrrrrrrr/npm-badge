@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/cnpmcore", "destination": "/api/hello" }
+    { "source": "/:name/:spec", "destination": "/api/badge" },
+    { "source": "/:scope/:name/:spec", "destination": "/api/badge" }
   ]
 }

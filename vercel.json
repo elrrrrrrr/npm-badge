@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/cnpmcore", "destination": "/api/hello" }
+  ]
+}

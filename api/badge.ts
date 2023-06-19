@@ -64,13 +64,25 @@ function render(title: string, value: string) {
 
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
+  res.setHeader('Content-Type', 'image/svg+xml');
+  const { title, value } = req.query;
+
+  if (title && value) {
+    res.send(render(title as string, value as string));
+    return;
+  }
   const url = req.url || '';
   const targetVersion = await urllib.request(`${REGISTRY}${url}`, {
     dataType: 'json',
   });
 
-  const { name, version } = targetVersion.data;
 
-  res.setHeader('Content-Type', 'image/svg+xml');
-  res.send(render(name, version));
+  const { name, version } = targetVersion.data;
+  const displayName = title || name;
+
+  if (version) {
+    res.send(render(displayName, version));
+  } else {
+    res.send(render(displayName, '-'));
+  };
 }

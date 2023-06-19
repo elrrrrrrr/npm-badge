@@ -1,31 +1,45 @@
-# Node.js Hello World
+# 🔰 npm-badge
 
-Simple Node.js + Vercel example that returns a "Hello World" response.
+[中文](README.zh-CN.md)
 
-## How to Use
+![cnpmcore](https://npm-badge-elrrrrrrr.vercel.app/cnpmcore/latest?title=npm&value=badge)
 
-You can choose from one of the following two methods to use this repository:
+## Examples
+> Lightweight, fast, and powerful online badge generation service
 
-### One-Click Deploy
+![cnpmcore](https://npm-badge-elrrrrrrr.vercel.app/cnpmcore/latest?title=latest)
+![cnpmcore](https://npm-badge-elrrrrrrr.vercel.app/cnpmcore/3.x?title=3.x)
+![cnpmcore](https://npm-badge-elrrrrrrr.vercel.app/cnpmcore/2.x?title=2.x)
+![cnpmcore](https://npm-badge-elrrrrrrr.vercel.app/cnpmcore/>0.x?title=>0.x)
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+### Preview
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/examples/tree/main/solutions/node-hello-world&project-name=node-hello-world&repository-name=node-hello-world)
+You can preview the project online at the following URL:
 
-### Clone and Deploy
+[Live Preview](https://npm-badge.elrrrrrrr.cloud/cnpmcore/latest)
 
-```bash
-git clone https://github.com/vercel/examples/tree/main/solutions/node-hello-world
-```
+### Features
 
-Install the Vercel CLI:
+- Support for Arbitrary Semver Expressions: The project supports any semver expression, allowing you to easily work with different version ranges and constraints.
 
-```bash
-npm i -g vercel
-```
+- Customizable Rendering: You can customize the title and content of the project's rendering, making it flexible for various use cases.
 
-Then run the app at the root of the repository:
+- Near Real-time Version Information: The project enables you to fetch the latest version information in near real-time, ensuring you have up-to-date data.
 
-```bash
-vercel dev
-```
+### Deployment
+
+The project can be easily deployed to Vercel. Click the button below to deploy:
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/project?template=https://github.com/elrrrrrrr/npm-badge)
+
+### Getting Started
+
+To get started with the 🔰 npm-badge project, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/elrrrrrrr/npm-badge.git`
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+
+### Contributing
+
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a merge request.
